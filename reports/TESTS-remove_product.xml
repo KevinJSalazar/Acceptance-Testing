@@ -1,0 +1,26 @@
+<testsuite name="remove_product.Remove a product from the inventory" tests="2" errors="0" failures="0" skipped="0" time="0.000593" timestamp="2026-07-30T15:59:14.990118" hostname="nobara-pc"><testcase classname="remove_product.Remove a product from the inventory" name="Remove a product from the inventory" status="passed" time="0.000354"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Remove a product from the inventory
+    Given the inventory contains products: ... passed in 0.000s
+      | Product |
+      | Coffee  |
+      | Sugar   |
+    When the user removes the product "Coffee" ... passed in 0.000s
+    Then the inventory should not contain "Coffee" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="remove_product.Remove a product from the inventory" name="Remove a product that does not exist" status="passed" time="0.000238"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Remove a product that does not exist
+    Given the inventory is empty ... passed in 0.000s
+    When the user removes the product "Coffee" ... passed in 0.000s
+    Then the output should be "Product 'Coffee' was not found" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

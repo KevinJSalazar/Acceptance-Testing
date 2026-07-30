@@ -1,0 +1,17 @@
+<testsuite name="search_product.Search for a product in the inventory" tests="1" errors="0" failures="0" skipped="0" time="0.000579" timestamp="2026-07-30T15:59:14.992850" hostname="nobara-pc"><testcase classname="search_product.Search for a product in the inventory" name="Search for a product by name" status="passed" time="0.000579"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Search for a product by name
+    Given the inventory contains products: ... passed in 0.000s
+      | Product |
+      | Coffee  |
+      | Sugar   |
+      | Milk    |
+    When the user searches for "Coffee" ... passed in 0.000s
+    Then the search results should contain "Coffee" ... passed in 0.000s
+    And the search results should not contain "Sugar" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

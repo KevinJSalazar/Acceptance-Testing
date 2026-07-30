@@ -1,0 +1,20 @@
+<testsuite name="list_products.List all products in the inventory" tests="1" errors="0" failures="0" skipped="0" time="0.000401" timestamp="2026-07-30T15:59:14.986794" hostname="nobara-pc"><testcase classname="list_products.List all products in the inventory" name="List all products in the inventory" status="passed" time="0.000401"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: List all products in the inventory
+    Given the inventory contains products: ... passed in 0.000s
+      | Product |
+      | Coffee  |
+      | Sugar   |
+    When the user lists all products ... passed in 0.000s
+    Then the output should contain: ... passed in 0.000s
+      """
+      Products:
+      - Coffee
+      - Sugar
+      """
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

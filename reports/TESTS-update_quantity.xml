@@ -1,0 +1,14 @@
+<testsuite name="update_quantity.Update the quantity of a product" tests="1" errors="0" failures="0" skipped="0" time="0.000968" timestamp="2026-07-30T15:59:14.996282" hostname="nobara-pc"><testcase classname="update_quantity.Update the quantity of a product" name="Update the quantity of a product" status="passed" time="0.000968"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Update the quantity of a product
+    Given the inventory contains products: ... passed in 0.000s
+      | Product | Quantity |
+      | Coffee  | 10       |
+    When the user updates product "Coffee" to quantity "25" ... passed in 0.000s
+    Then the inventory should show product "Coffee" with quantity "25" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

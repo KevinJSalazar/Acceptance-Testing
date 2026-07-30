@@ -1,0 +1,12 @@
+<testsuite name="add_product.Add a product to the inventory" tests="1" errors="0" failures="0" skipped="0" time="0.000486" timestamp="2026-07-30T15:59:14.984605" hostname="nobara-pc"><testcase classname="add_product.Add a product to the inventory" name="Add a product to the inventory" status="passed" time="0.000486"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Add a product to the inventory
+    Given the inventory is empty ... passed in 0.000s
+    When the user adds a product "Coffee" ... passed in 0.000s
+    Then the inventory should contain "Coffee" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
